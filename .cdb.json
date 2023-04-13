@@ -7,5 +7,5 @@
     "repo": "https://github.com/fluxionary/minetest-news.git",
     "website": "https://github.com/fluxionary/minetest-news",
     "issue_tracker": "https://github.com/fluxionary/minetest-news/issues",
-    "short_description": "TODO: write a description"
+    "short_description": "a simple tools for displaying news for a server"
 }
