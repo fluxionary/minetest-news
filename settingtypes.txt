@@ -1,0 +1,2 @@
+# privilege needed to edit news
+news:edit_priv (news edit privilege) string server
