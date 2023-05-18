@@ -59,7 +59,6 @@ minetest.register_chatcommand("news_edit", {
 
 minetest.register_chatcommand("news", {
 	description = S("show news"),
-	privs = { [news.settings.edit_priv] = true },
 	func = function(name)
 		minetest.show_formspec(name, "news:read", build_show_formspec())
 	end,
