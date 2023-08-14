@@ -4,6 +4,7 @@ news, private_state = fmod.create()
 local mod_storage = private_state.mod_storage
 
 local f = string.format
+local F = minetest.formspec_escape
 local S = news.S
 
 local function get_news()
@@ -35,7 +36,7 @@ local function build_show_formspec()
 	local parts = {
 		"size[12,8.25]",
 		f("button_exit[-0.05,7.8;2,1;exit;X]"),
-		f("textarea[0.25,0;12.1,9;news;;%s]", get_news()),
+		f("textarea[0.25,0;12.1,9;news;;%s]", F(get_news())),
 	}
 	return table.concat(parts, "")
 end
@@ -44,7 +45,7 @@ local function build_edit_formspec()
 	local parts = {
 		"size[12,8.25]",
 		f("button_exit[-0.05,7.8;2,1;exit;submit]"),
-		f("textarea[0.25,0;12.1,9;news;;%s]", get_news()),
+		f("textarea[0.25,0;12.1,9;news;;%s]", F(get_news())),
 	}
 	return table.concat(parts, "")
 end
